@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-paper-scissors-game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="modal">
+            <div>
+                <h1>Rules</h1>
+                <img class="close" src="./images/icon-close.svg" alt="">
+            </div>
+            <img class="rules" src="./images/image-rules-bonus.svg" alt="">
+        </div>
+    </div>
+    <main>
+        <header>
+            <img src="./images/logo-bonus.svg" alt="">
+            <div class="score">
+                <h2>score</h2>
+                <h1 class="counter">0</h1>
+            </div>
+        </header>
+
+        <section>
+            <img class="pentagon" src="./images/bg-pentagon.svg" alt="">
+            <div class="rps-img">
+                <button class="scissors img" data-name="scissors">
+                    <img src="./images/icon-scissors.svg" alt="">
+                </button>
+                <div class="row1">
+                    <button class="spock img" data-name="spock">
+                        <img src="./images/icon-spock.svg" alt="">
+                    </button>
+                    <button class="paper img" data-name="paper">
+                        <img src="./images/icon-paper.svg" alt="">
+                    </button>
+                </div>
+                <div class="row2">
+                    <button class="lizard img" data-name="lizard">
+                        <img src="./images/icon-lizard.svg" alt="">
+                    </button>
+                    <button class="rock img" data-name="rock">
+                        <img src="./images/icon-rock.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="display-picked__section">
+            <div class="user-selected_container">
+                <div class="winner-circle1">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                </div>
+                <h3>You picked</h2>
+                    <div class="user-selected">
+                        <img class="user-selected_img" src="" alt="">
+                    </div>
+            </div>
+            <div class="winner-container">
+                <h1 class="winner"></h1>
+                <button class="play-again">PLAY AGAIN</button>
+            </div>
+            <div class="computer-selected_container">
+                <div class="winner-circle2">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                </div>
+                <h3>The house picked</h3>
+                <div class="computer-selected">
+                    <img class="computer-selected_img" src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="button-div">
+            <button>Rules</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
