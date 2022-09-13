@@ -324,7 +324,11 @@ section button {
 
     header {
         width: 75%;
-    }
+    } 
+    
+    .row1, .row2 {
+      gap: 5.5rem;
+     }
 
     .circle-1 {
         width: 24rem;
